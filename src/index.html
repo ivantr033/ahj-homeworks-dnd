@@ -1,0 +1,58 @@
+<!-- Контейнер доски (Board Container) -->
+<div id="board" class="flex gap-4 items-start max-w-6xl mx-auto overflow-x-auto pb-4 select-none">
+
+  <!-- Колонка 1: TODO -->
+  <div class="column bg-gray-200 w-80 rounded-2xl p-3 flex flex-col max-h-[85vh] border border-gray-300 shadow-md"
+    data-status="todo">
+    <div class="column-header flex justify-between items-center mb-2 px-1 relative">
+      <h3 class="font-bold text-gray-700 uppercase text-xs tracking-wider">TODO</h3>
+      <!-- 🌟 EL NUEVO BOTÓN DE MENÚ CON SUSPENSIVOS -->
+      <button
+        class="column-menu-btn text-gray-400 hover:text-gray-700 font-bold text-xs p-1 rounded hover:bg-gray-300/50 transition-colors tracking-widest outline-none">
+        •••
+      </button>
+    </div>
+    <div class="cards-container flex-1 overflow-y-auto space-y-2 min-h-[50px] pb-10"></div>
+    <button
+      class="add-card-btn w-full text-left text-gray-500 hover:bg-gray-300/60 p-2 rounded-xl text-xs font-bold transition-all mt-2 flex items-center gap-1">
+      + Add another card
+    </button>
+  </div>
+
+  <!-- Колонка 2: IN PROGRESS -->
+  <div class="column bg-gray-200 w-80 rounded-2xl p-3 flex flex-col max-h-[85vh] border border-gray-300 shadow-md"
+    data-status="in_progress">
+    <div class="column-header flex justify-between items-center mb-2 px-1 relative">
+      <h3 class="font-bold text-gray-700 uppercase text-xs tracking-wider">IN PROGRESS</h3>
+      <!-- 🌟 EL NUEVO BOTÓN DE MENÚ CON SUSPENSIVOS -->
+      <button
+        class="column-menu-btn text-gray-400 hover:text-gray-700 font-bold text-xs p-1 rounded hover:bg-gray-300/50 transition-colors tracking-widest outline-none">
+        •••
+      </button>
+    </div>
+    <div class="cards-container flex-1 overflow-y-auto space-y-2 min-h-[50px] pb-10"></div>
+    <button
+      class="add-card-btn w-full text-left text-gray-500 hover:bg-gray-300/60 p-2 rounded-xl text-xs font-bold transition-all mt-2 flex items-center gap-1">
+      + Add another card
+    </button>
+  </div>
+
+  <!-- Колонка 3: DONE -->
+  <div class="column bg-gray-200 w-80 rounded-2xl p-3 flex flex-col max-h-[85vh] border border-gray-300 shadow-md"
+    data-status="done">
+    <div class="column-header flex justify-between items-center mb-2 px-1 relative">
+      <h3 class="font-bold text-gray-700 uppercase text-xs tracking-wider">DONE</h3>
+      <!-- 🌟 EL NUEVO BOTÓN DE MENÚ CON SUSPENSIVOS -->
+      <button
+        class="column-menu-btn text-gray-400 hover:text-gray-700 font-bold text-xs p-1 rounded hover:bg-gray-300/50 transition-colors tracking-widest outline-none">
+        •••
+      </button>
+    </div>
+    <div class="cards-container flex-1 overflow-y-auto space-y-2 min-h-[50px] pb-10"></div>
+    <button
+      class="add-card-btn w-full text-left text-gray-500 hover:bg-gray-300/60 p-2 rounded-xl text-xs font-bold transition-all mt-2 flex items-center gap-1">
+      + Add another card
+    </button>
+  </div>
+
+</div>
